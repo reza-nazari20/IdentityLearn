@@ -11,183 +11,160 @@ using System.Linq;
 
 namespace Identity.Areas.Admin.Controllers
 {
-    [Area("Admin")]
     // این خط مشخص می‌کند که این کنترلر در ناحیه Admin قرار دارد
+    [Area("Admin")]
     public class UsersController : Controller
-    // تعریف کلاس UsersController که از کلاس Controller ارث‌بری می‌کند
     {
-        private readonly UserManager<User> _userManager;
         // تعریف یک فیلد خصوصی فقط-خواندنی برای مدیریت کاربران
-        private readonly RoleManager<Role> _roleManager;
+        private readonly UserManager<User> _userManager;
         // تعریف یک فیلد خصوصی فقط-خواندنی برای مدیریت نقش‌ها
+        private readonly RoleManager<Role> _roleManager;
 
         public UsersController(UserManager<User> userManager, RoleManager<Role> roleManager)
-        // سازنده کلاس که دو پارامتر برای مدیریت کاربران و نقش‌ها دریافت می‌کند (تزریق وابستگی)
         {
             _userManager = userManager;
-            // مقداردهی فیلد _userManager با مقدار دریافتی از پارامتر
             _roleManager = roleManager;
-            // مقداردهی فیلد _roleManager با مقدار دریافتی از پارامتر
         }
 
         public IActionResult Index()
-        // متد اکشن Index که لیست کاربران را نمایش می‌دهد
         {
+            // دریافت لیست تمام کاربران از _userManager
             var users = _userManager.Users
-                // دریافت لیست تمام کاربران از _userManager
-                .Select(p => new UserListDto
                 // تبدیل هر کاربر به یک شیء UserListDto با استفاده از LINQ
+                .Select(p => new UserListDto
                 {
                     Id = p.Id,
-                    // انتساب شناسه کاربر به Id در UserListDto
                     FirstName = p.FirstName,
-                    // انتساب نام کاربر به FirstName در UserListDto
                     LastName = p.LastName,
-                    // انتساب نام خانوادگی کاربر به LastName در UserListDto
                     UserName = p.UserName,
-                    // انتساب نام کاربری به UserName در UserListDto
                     PhoneNumber = p.PhoneNumber,
-                    // انتساب شماره تلفن کاربر به PhoneNumber در UserListDto
                     EmailConfirmed = p.EmailConfirmed,
-                    // انتساب وضعیت تأیید ایمیل به EmailConfirmed در UserListDto
                     AccessFailedCount = p.AccessFailedCount
-                    // انتساب تعداد دفعات ورود ناموفق به AccessFailedCount در UserListDto
+                    // تبدیل نتیجه به یک لیست
                 }).ToList();
-            // تبدیل نتیجه به یک لیست
-            return View(users);
             // ارسال لیست کاربران به نمای مربوطه
+            return View(users);
         }
 
-        public IActionResult Create()
         // متد اکشن Create برای نمایش فرم ایجاد کاربر جدید
+        public IActionResult Create()
         {
-            return View();
             // بازگرداندن نمای پیش‌فرض بدون مدل
+            return View();
         }
 
         [HttpPost]
-        // مشخص می‌کند که این متد فقط به درخواست‌های POST پاسخ می‌دهد
-        public IActionResult Create(RegisterDto register)
         // متد اکشن Create برای پردازش فرم ارسالی ایجاد کاربر جدید
+        public IActionResult Create(RegisterDto register)
         {
-            if (ModelState.IsValid == false)
             // بررسی اعتبارسنجی مدل - اگر مدل معتبر نباشد
+            if (ModelState.IsValid == false)
             {
-                return View(register);
                 // بازگرداندن نما با همان مدل دریافتی برای نمایش خطاها
+                return View(register);
             }
 
-            User newUser = new User()
             // ایجاد یک شیء جدید از کلاس User
+            User newUser = new User()
             {
                 FirstName = register.FirstName,
-                // انتساب نام از مدل دریافتی به شیء کاربر جدید
                 LastName = register.LastName,
-                // انتساب نام خانوادگی از مدل دریافتی به شیء کاربر جدید
                 Email = register.Email,
-                // انتساب ایمیل از مدل دریافتی به شیء کاربر جدید
                 UserName = register.Email,
-                // استفاده از ایمیل به عنوان نام کاربری
             };
 
-            var result = _userManager.CreateAsync(newUser, register.Password).Result;
             // ایجاد کاربر جدید با استفاده از _userManager و منتظر نتیجه با استفاده از Result
-            if (result.Succeeded)
+            var result = _userManager.CreateAsync(newUser, register.Password).Result;
             // بررسی موفقیت‌آمیز بودن عملیات ایجاد کاربر
+            if (result.Succeeded)
             {
-                return RedirectToAction("Index", "users", new { area = "admin" });
                 // هدایت کاربر به اکشن Index از کنترلر users در ناحیه admin
+                return RedirectToAction("Index", "users", new { area = "admin" });
             }
 
-            string message = "";
             // ایجاد یک رشته خالی برای نگهداری پیام‌های خطا
-            foreach (var item in result.Errors.ToList())
+            string message = "";
             // حلقه روی تمام خطاهای رخ داده
+            foreach (var item in result.Errors.ToList())
             {
-                message += item.Description + Environment.NewLine;
                 // اضافه کردن توضیح خطا به متغیر message و افزودن خط جدید
+                message += item.Description + Environment.NewLine;
             }
-            TempData["Message"] = message;
             // ذخیره پیام‌های خطا در TempData برای نمایش در نما
-            return View(register);
+            TempData["Message"] = message;
             // بازگرداندن نما با همان مدل دریافتی
+            return View(register);
         }
 
-        public IActionResult Edit(string Id)
         // متد اکشن Edit برای نمایش فرم ویرایش کاربر
+        public IActionResult Edit(string Id)
         {
-            var user = _userManager.FindByIdAsync(Id).Result;
             // پیدا کردن کاربر با شناسه مشخص شده و منتظر نتیجه با استفاده از Result
+            var user = _userManager.FindByIdAsync(Id).Result;
 
-            UserEditDto userEdit = new UserEditDto()
             // ایجاد یک شیء جدید از کلاس UserEditDto
+            UserEditDto userEdit = new UserEditDto()
             {
                 Id = user.Id,
-                // انتساب شناسه کاربر به Id در UserEditDto
                 FirstName = user.FirstName,
-                // انتساب نام کاربر به FirstName در UserEditDto
                 LastName = user.LastName,
-                // انتساب نام خانوادگی کاربر به LastName در UserEditDto
                 Email = user.Email,
-                // انتساب ایمیل کاربر به Email در UserEditDto
                 UserName = user.UserName,
-                // انتساب نام کاربری به UserName در UserEditDto
                 PhoneNumber = user.PhoneNumber,
-                // انتساب شماره تلفن کاربر به PhoneNumber در UserEditDto
             };
 
-            return View(userEdit);
             // ارسال مدل به نمای مربوطه
+            return View(userEdit);
         }
 
         [HttpPost]
-        // مشخص می‌کند که این متد فقط به درخواست‌های POST پاسخ می‌دهد
-        public IActionResult Edit(UserEditDto userEdit)
         // متد اکشن Edit برای پردازش فرم ویرایش کاربر
+        public IActionResult Edit(UserEditDto userEdit)
         {
-            var user = _userManager.FindByIdAsync(userEdit.Id).Result;
             // پیدا کردن کاربر با شناسه مشخص شده در مدل و منتظر نتیجه با استفاده از Result
+            var user = _userManager.FindByIdAsync(userEdit.Id).Result;
+            // به‌روزرسانی اطلاعات کاربر با مقادیر جدید از مدل
             user.FirstName = userEdit.FirstName;
-            // به‌روزرسانی نام کاربر با مقدار جدید از مدل
             user.LastName = userEdit.LastName;
-            // به‌روزرسانی نام خانوادگی کاربر با مقدار جدید از مدل
             user.Email = userEdit.Email;
-            // به‌روزرسانی ایمیل کاربر با مقدار جدید از مدل
             user.UserName = userEdit.UserName;
-            // به‌روزرسانی نام کاربری با مقدار جدید از مدل
             user.PhoneNumber = userEdit.PhoneNumber;
-            // به‌روزرسانی شماره تلفن کاربر با مقدار جدید از مدل
 
-            var result = _userManager.UpdateAsync(user).Result;
             // به‌روزرسانی کاربر با استفاده از _userManager و منتظر نتیجه با استفاده از Result
+            var result = _userManager.UpdateAsync(user).Result;
 
-            if (result.Succeeded)
             // بررسی موفقیت‌آمیز بودن عملیات به‌روزرسانی
+            if (result.Succeeded)
             {
-                return RedirectToAction("Index", "users", new { area = "admin" });
                 // هدایت کاربر به اکشن Index از کنترلر users در ناحیه admin
+                return RedirectToAction("Index", "users", new { area = "admin" });
             }
-            string message = "";
+
             // ایجاد یک رشته خالی برای نگهداری پیام‌های خطا
-            foreach (var item in result.Errors.ToList())
+            string message = "";
             // حلقه روی تمام خطاهای رخ داده
+            foreach (var item in result.Errors.ToList())
             {
-                message += item.Description + Environment.NewLine;
                 // اضافه کردن توضیح خطا به متغیر message و افزودن خط جدید
+                message += item.Description + Environment.NewLine;
             }
-            TempData["Message"] = message;
+
+
             // ذخیره پیام‌های خطا در TempData برای نمایش در نما
-            return View(userEdit);
+            TempData["Message"] = message;
+
             // بازگرداندن نما با همان مدل دریافتی
+            return View(userEdit);
         }
 
-        public IActionResult Delete(string Id)
         // متد اکشن Delete برای نمایش صفحه تأیید حذف کاربر
+        public IActionResult Delete(string Id)
         {
-            var user = _userManager.FindByIdAsync(Id).Result;
             // پیدا کردن کاربر با شناسه مشخص شده و منتظر نتیجه با استفاده از Result
-            UserDeleteDto userDelete = new UserDeleteDto()
+            var user = _userManager.FindByIdAsync(Id).Result;
+
             // ایجاد یک شیء جدید از کلاس UserDeleteDto
+            UserDeleteDto userDelete = new UserDeleteDto()
             {
                 Id = user.Id,
                 // انتساب شناسه کاربر به Id در UserDeleteDto
@@ -198,99 +175,106 @@ namespace Identity.Areas.Admin.Controllers
                 UserName = user.UserName,
                 // انتساب نام کاربری به UserName در UserDeleteDto
             };
-            return View(userDelete);
             // ارسال مدل به نمای مربوطه
+            return View(userDelete);
         }
 
         [HttpPost]
-        // مشخص می‌کند که این متد فقط به درخواست‌های POST پاسخ می‌دهد
-        public IActionResult Delete(UserDeleteDto userDelete)
         // متد اکشن Delete برای پردازش درخواست حذف کاربر
+        public IActionResult Delete(UserDeleteDto userDelete)
         {
-            var user = _userManager.FindByIdAsync(userDelete.Id).Result;
             // پیدا کردن کاربر با شناسه مشخص شده در مدل و منتظر نتیجه با استفاده از Result
+            var user = _userManager.FindByIdAsync(userDelete.Id).Result;
 
-            var result = _userManager.DeleteAsync(user).Result;
             // حذف کاربر با استفاده از _userManager و منتظر نتیجه با استفاده از Result
+            var result = _userManager.DeleteAsync(user).Result;
 
-            if (result.Succeeded)
             // بررسی موفقیت‌آمیز بودن عملیات حذف
+            if (result.Succeeded)
             {
-                return RedirectToAction("Index", "users", new { area = "admin" });
                 // هدایت کاربر به اکشن Index از کنترلر users در ناحیه admin
+                return RedirectToAction("Index", "users", new { area = "admin" });
             }
-            string message = "";
+
             // ایجاد یک رشته خالی برای نگهداری پیام‌های خطا
-            foreach (var item in result.Errors.ToList())
+            string message = "";
             // حلقه روی تمام خطاهای رخ داده
+            foreach (var item in result.Errors.ToList())
             {
-                message += item.Description + Environment.NewLine;
                 // اضافه کردن توضیح خطا به متغیر message و افزودن خط جدید
+                message += item.Description + Environment.NewLine;
             }
-            TempData["Message"] = message;
+
             // ذخیره پیام‌های خطا در TempData برای نمایش در نما
-            return View(userDelete);
+            TempData["Message"] = message;
+
             // بازگرداندن نما با همان مدل دریافتی
+            return View(userDelete);
         }
 
-        public IActionResult AddUserRole(string Id)
         // متد اکشن AddUserRole برای نمایش فرم افزودن نقش به کاربر
+        public IActionResult AddUserRole(string Id)
         {
 
-            var user = _userManager.FindByIdAsync(Id).Result;
             // پیدا کردن کاربر با شناسه مشخص شده و منتظر نتیجه با استفاده از Result
+            var user = _userManager.FindByIdAsync(Id).Result;
 
+            // ایجاد یک لیست از SelectListItem‌ها برای نمایش در دراپ‌داون نقش‌ها
             var roles = new List<SelectListItem>(
-                // ایجاد یک لیست از SelectListItem‌ها برای نمایش در دراپ‌داون نقش‌ها
-                _roleManager.Roles.Select(p => new SelectListItem
                 // تبدیل هر نقش به یک SelectListItem با استفاده از LINQ
+                _roleManager.Roles.Select(p => new SelectListItem
                 {
-                    Text = p.Name,
                     // انتساب نام نقش به Text در SelectListItem (متنی که نمایش داده می‌شود)
-                    Value = p.Name,
+                    Text = p.Name,
                     // انتساب نام نقش به Value در SelectListItem (مقداری که هنگام انتخاب ارسال می‌شود)
+                    Value = p.Name,
                 }
+                // تبدیل نتیجه به یک لیست
                 ).ToList());
-            // تبدیل نتیجه به یک لیست
 
-            return View(new AddUserRoleDto
             // ایجاد یک شیء جدید از کلاس AddUserRoleDto و ارسال آن به نما
+            return View(new AddUserRoleDto
             {
-                Id = Id,
                 // انتساب شناسه کاربر به Id در AddUserRoleDto
-                Roles = roles,
+                Id = Id,
                 // انتساب لیست نقش‌ها به Roles در AddUserRoleDto
-                Email = user.Email,
+                Roles = roles,
                 // انتساب ایمیل کاربر به Email در AddUserRoleDto
-                FullName = $"{user.FirstName}  {user.LastName}"
+                Email = user.Email,
                 // ترکیب نام و نام خانوادگی کاربر و انتساب به FullName در AddUserRoleDto
+                FullName = $"{user.FirstName}  {user.LastName}"
             });
         }
 
         [HttpPost]
-        // مشخص می‌کند که این متد فقط به درخواست‌های POST پاسخ می‌دهد
-        public IActionResult AddUserRole(AddUserRoleDto newRole)
         // متد اکشن AddUserRole برای پردازش درخواست افزودن نقش به کاربر
+        public IActionResult AddUserRole(AddUserRoleDto newRole)
         {
-            var user = _userManager.FindByIdAsync(newRole.Id).Result;
             // پیدا کردن کاربر با شناسه مشخص شده در مدل و منتظر نتیجه با استفاده از Result
-            var result = _userManager.AddToRoleAsync(user, newRole.Role).Result;
+            var user = _userManager.FindByIdAsync(newRole.Id).Result;
+
             // افزودن نقش به کاربر با استفاده از _userManager و منتظر نتیجه با استفاده از Result
-            return RedirectToAction("UserRoles", "Users", new { Id = user.Id, area = "admin" });
+            var result = _userManager.AddToRoleAsync(user, newRole.Role).Result;
+
             // هدایت کاربر به اکشن UserRoles از کنترلر Users در ناحیه admin با ارسال Id کاربر
+            return RedirectToAction("UserRoles", "Users", new { Id = user.Id, area = "admin" });
         }
 
-        public IActionResult UserRoles(string Id)
         // متد اکشن UserRoles برای نمایش لیست نقش‌های یک کاربر
+        public IActionResult UserRoles(string Id)
         {
-            var user = _userManager.FindByIdAsync(Id).Result;
             // پیدا کردن کاربر با شناسه مشخص شده و منتظر نتیجه با استفاده از Result
-            var roles = _userManager.GetRolesAsync(user).Result;
+            var user = _userManager.FindByIdAsync(Id).Result;
+
             // دریافت لیست نقش‌های کاربر با استفاده از _userManager و منتظر نتیجه با استفاده از Result
-            ViewBag.UserInfo = $"Name : {user.FirstName} {user.LastName} Email:{user.Email}";
+            var roles = _userManager.GetRolesAsync(user).Result;
+
             // ذخیره اطلاعات کاربر در ViewBag برای نمایش در نما
-            return View(roles);
+            ViewBag.UserInfo = $"Name : {user.FirstName} {user.LastName} Email:{user.Email}";
+
             // ارسال لیست نقش‌ها به نمای مربوطه
+            return View(roles);
         }
     }
 }
+

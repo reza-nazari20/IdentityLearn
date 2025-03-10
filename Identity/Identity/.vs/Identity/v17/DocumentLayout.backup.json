@@ -1,7 +1,64 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\IdentityLearn\\Identity\\Identity\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\models\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\models\\entities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\areas\\admin\\data\\dto\\userlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\areas\\admin\\data\\dto\\userlistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\areas\\admin\\data\\dto\\usereditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\areas\\admin\\data\\dto\\usereditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\areas\\admin\\data\\dto\\userdeletedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\areas\\admin\\data\\dto\\userdeletedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\areas\\admin\\data\\dto\\roles\\rolelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\areas\\admin\\data\\dto\\roles\\rolelistdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\areas\\admin\\data\\dto\\roles\\adduserroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\areas\\admin\\data\\dto\\roles\\adduserroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\areas\\admin\\data\\dto\\roles\\addnewroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\areas\\admin\\data\\dto\\roles\\addnewroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\areas\\admin\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\areas\\admin\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +66,190 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Identity\\Models\\ErrorViewModel.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Identity\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:41:19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Identity\\Models\\Entities\\User.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "Identity\\Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:40:57.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Role.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Entities\\Role.cs",
+              "RelativeDocumentMoniker": "Identity\\Models\\Entities\\Role.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Entities\\Role.cs",
+              "RelativeToolTip": "Identity\\Models\\Entities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:40:44.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Dto\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Models\\Dto\\RegisterDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Dto\\RegisterDto.cs",
+              "RelativeToolTip": "Identity\\Models\\Dto\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:40:23.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Dto\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Models\\Dto\\LoginDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Dto\\LoginDto.cs",
+              "RelativeToolTip": "Identity\\Models\\Dto\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:39:47.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataBaseContext.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Data\\DataBaseContext.cs",
+              "RelativeDocumentMoniker": "Identity\\Data\\DataBaseContext.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Data\\DataBaseContext.cs",
+              "RelativeToolTip": "Identity\\Data\\DataBaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:38:49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserListDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\UserListDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Areas\\Admin\\Data\\Dto\\UserListDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\UserListDto.cs",
+              "RelativeToolTip": "Identity\\Areas\\Admin\\Data\\Dto\\UserListDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:38:20.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserEditDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\UserEditDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Areas\\Admin\\Data\\Dto\\UserEditDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\UserEditDto.cs",
+              "RelativeToolTip": "Identity\\Areas\\Admin\\Data\\Dto\\UserEditDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:38:03.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserDeleteDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\UserDeleteDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Areas\\Admin\\Data\\Dto\\UserDeleteDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\UserDeleteDto.cs",
+              "RelativeToolTip": "Identity\\Areas\\Admin\\Data\\Dto\\UserDeleteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:37:47.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RoleListDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\Roles\\RoleListDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Areas\\Admin\\Data\\Dto\\Roles\\RoleListDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\Roles\\RoleListDto.cs",
+              "RelativeToolTip": "Identity\\Areas\\Admin\\Data\\Dto\\Roles\\RoleListDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:37:31.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddUserRoleDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\Roles\\AddUserRoleDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Areas\\Admin\\Data\\Dto\\Roles\\AddUserRoleDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\Roles\\AddUserRoleDto.cs",
+              "RelativeToolTip": "Identity\\Areas\\Admin\\Data\\Dto\\Roles\\AddUserRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:37:13.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddNewRoleDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\Roles\\AddNewRoleDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Areas\\Admin\\Data\\Dto\\Roles\\AddNewRoleDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Data\\Dto\\Roles\\AddNewRoleDto.cs",
+              "RelativeToolTip": "Identity\\Areas\\Admin\\Data\\Dto\\Roles\\AddNewRoleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:36:55.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Identity\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Identity\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAYwBcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:35:48.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Identity\\Areas\\Admin\\Controllers\\RolesController.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Areas\\Admin\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Identity\\Areas\\Admin\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwGgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T08:35:12.946Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -50,6 +289,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }
