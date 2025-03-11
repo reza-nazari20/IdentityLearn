@@ -473,3 +473,6 @@ E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Areas\Admin\V
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Areas\Admin\Views\Users\UserRoles.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Areas\Admin\Views\Roles\UserInRole.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\DisplayEmail.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\ForgotPassword.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs

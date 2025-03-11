@@ -32,7 +32,7 @@ namespace Identity.Data
             modelBuilder.Entity<IdentityUserToken<string>>().HasKey(p => new { p.UserId, p.LoginProvider });
 
             // تنظیم Entity Framework برای نادیده گرفتن (عدم ایجاد ستون) خاصیت NormalizedEmail در مدل User
-            modelBuilder.Entity<User>().Ignore(p => p.NormalizedEmail);
+            //modelBuilder.Entity<User>().Ignore(p => p.NormalizedEmail);
         }
     }
 }

@@ -41,7 +41,7 @@ namespace Identity.Services
             //لینک گرفتن رمز عبور جدید برای سرویس ارسال ایمیل
             //https://myaccount.google.com/apppasswords
             // تنظیم اعتبارنامه‌های لازم برای احراز هویت با سرور SMTP
-            client.Credentials = new NetworkCredential("pr.rezanazarii@gmail.com", "zycp dtld kibk drdr");
+            client.Credentials = new NetworkCredential("pr.rezanazarii@gmail.com", "bzhn leqw piad wxvz");
 
             // ایجاد پیام ایمیل با مشخص کردن فرستنده، گیرنده، موضوع و متن پیام
             MailMessage message = new MailMessage("pr.rezanazarii@gmail.com", UserEmail, Subject, Body);
