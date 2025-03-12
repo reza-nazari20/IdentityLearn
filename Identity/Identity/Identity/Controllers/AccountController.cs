@@ -2,6 +2,7 @@
 using Identity.Models.Dto.Account;
 using Identity.Models.Entities;
 using Identity.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -313,5 +314,90 @@ namespace Identity.Controllers
 
         /// ///////////////////////////////////////////////////////////////پایان بخش فراموشی رمز عبور و تغییر رمز عبور با ارسال ایمیل تایید به ایمیل کاربر🔵👆
 
+        [Authorize]
+        // اعمال فیلتر احراز هویت - فقط کاربران لاگین شده می‌توانند به این اکشن دسترسی داشته باشند
+        public IActionResult SetPhoneNumber()
+        {
+            // بازگرداندن نمای مربوط به تنظیم شماره تلفن
+            return View();
+        }
+
+        [HttpPost]
+        [Authorize]
+        // اعمال فیلتر احراز هویت - فقط کاربران لاگین شده می‌توانند به این اکشن دسترسی داشته باشند
+        public IActionResult SetPhoneNumber(SetPhoneNumberDto phoneNumberDto)
+        {
+            // یافتن کاربر فعلی با استفاده از نام کاربری و منتظر نتیجه با استفاده از Result
+            var user = _userManager.FindByNameAsync(User.Identity.Name).Result;
+
+            // تنظیم شماره تلفن برای کاربر با استفاده از _userManager و منتظر نتیجه با استفاده از Result
+            var setResult = _userManager.SetPhoneNumberAsync(user, phoneNumberDto.PhoneNumber).Result;
+
+            // تولید کد تایید برای شماره تلفن جدید و منتظر نتیجه با استفاده از Result
+            string code = _userManager.GenerateChangePhoneNumberTokenAsync(user, phoneNumberDto.PhoneNumber).Result;
+
+            // ایجاد نمونه‌ای از سرویس ارسال پیامک
+            SmsService smsService = new SmsService();
+
+            // ارسال کد تایید به شماره تلفن وارد شده
+            smsService.Send(phoneNumberDto.PhoneNumber, code);
+
+            // ذخیره شماره تلفن در TempData برای استفاده در اکشن بعدی
+            TempData["PhoneNumber"] = phoneNumberDto.PhoneNumber;
+
+            // هدایت کاربر به اکشن تایید شماره تلفن
+            return RedirectToAction(nameof(VerifyPhoneNumber));
+        }
+
+        [Authorize]
+        // اعمال فیلتر احراز هویت - فقط کاربران لاگین شده می‌توانند به این اکشن دسترسی داشته باشند
+        public IActionResult VerifyPhoneNumber()
+        {
+            // بازگرداندن نمای تایید شماره تلفن با مدل VerifyPhoneNumberDto که شماره تلفن از TempData در آن قرار گرفته است
+            return View(new VerifyPhoneNumberDto
+            {
+                // دریافت شماره تلفن ذخیره شده در TempData و تبدیل آن به رشته
+                PhoneNumber = TempData["PhoneNumber"].ToString(),
+            });
+        }
+
+        [HttpPost]
+        [Authorize]
+        // اعمال فیلتر احراز هویت - فقط کاربران لاگین شده می‌توانند به این اکشن دسترسی داشته باشند
+        public IActionResult VerifyPhoneNumber(VerifyPhoneNumberDto verify)
+        {
+            // یافتن کاربر فعلی با استفاده از نام کاربری و منتظر نتیجه با استفاده از Result
+            var user = _userManager.FindByNameAsync(User.Identity.Name).Result;
+
+            // بررسی صحت کد وارد شده برای تایید شماره تلفن و منتظر نتیجه با استفاده از Result
+            bool resultVerify = _userManager.VerifyChangePhoneNumberTokenAsync(user, verify.Code, verify.PhoneNumber).Result;
+
+            // اگر کد وارد شده صحیح نباشد
+            if (resultVerify == false)
+            {
+                // نمایش پیام خطا به کاربر با استفاده از ViewData
+                ViewData["Message"] = $"کد وارد شده برای شماره {verify.PhoneNumber}اشتباه است";
+
+                // بازگرداندن نما با همان مدل برای اصلاح توسط کاربر
+                return View(verify);
+            }
+            else
+            {
+                // تایید شماره تلفن کاربر در صورت صحت کد
+                user.PhoneNumberConfirmed = true;
+
+                // به‌روزرسانی اطلاعات کاربر در دیتابیس
+                _userManager.UpdateAsync(user);
+            }
+
+            // هدایت کاربر به صفحه موفقیت‌آمیز بودن عملیات تایید
+            return RedirectToAction("VerifySuccess");
+        }
+
+        public IActionResult VerifySuccess()
+        {
+            // بازگرداندن نمای موفقیت‌آمیز بودن عملیات تایید شماره تلفن
+            return View();
+        }
     }
 }

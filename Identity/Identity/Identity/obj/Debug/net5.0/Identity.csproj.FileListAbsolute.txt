@@ -476,3 +476,5 @@ E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\ForgotPassword.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\ResetPasswordConfirmation.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\SetPhoneNumber.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\VerifyPhoneNumber.cshtml.g.cs
