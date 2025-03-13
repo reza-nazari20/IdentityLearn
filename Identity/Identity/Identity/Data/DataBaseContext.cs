@@ -28,8 +28,8 @@ namespace Identity.Data
             modelBuilder.Entity<IdentityUserRole<string>>().HasKey(p => new { p.UserId, p.RoleId });
 
             // تعریف کلید اصلی ترکیبی برای جدول IdentityUserToken
-            // کلید اصلی از فیلدهای UserId و LoginProvider تشکیل شده است
-            modelBuilder.Entity<IdentityUserToken<string>>().HasKey(p => new { p.UserId, p.LoginProvider });
+            // کلید اصلی از فیلدهای UserId و LoginProvider و Name تشکیل شده است
+            modelBuilder.Entity<IdentityUserToken<string>>().HasKey(p => new { p.UserId, p.LoginProvider, p.Name });
 
             // تنظیم Entity Framework برای نادیده گرفتن (عدم ایجاد ستون) خاصیت NormalizedEmail در مدل User
             //modelBuilder.Entity<User>().Ignore(p => p.NormalizedEmail);
