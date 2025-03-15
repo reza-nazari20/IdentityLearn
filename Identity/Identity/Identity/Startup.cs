@@ -31,10 +31,16 @@ namespace Identity
             services.AddDbContext<DataBaseContext>(p => p.UseSqlServer("Data Source=.; Initial Catalog=DbIdentity; Integrated Security=True; TrustServerCertificate=Yes")); 
             services.AddControllersWithViews();
 
+            // پیکربندی سیستم احراز هویت (Identity) در برنامه
             services.AddIdentity<User, Role>()
-                .AddEntityFrameworkStores<DataBaseContext>()
-                .AddDefaultTokenProviders()
-                .AddErrorDescriber<CustomIdentityError>();
+               // تعیین ذخیره‌سازی داده‌ها با استفاده از Entity Framework و کلاس DataBaseContext
+               .AddEntityFrameworkStores<DataBaseContext>()
+               // افزودن ارائه‌دهنده‌های توکن پیش‌فرض برای عملیاتی مانند بازیابی رمز عبور و تأیید ایمیل
+               .AddDefaultTokenProviders()
+               // استفاده از کلاس سفارشی CustomIdentityError برای نمایش پیام‌های خطا (احتمالاً به زبان فارسی)
+               .AddErrorDescriber<CustomIdentityError>()
+               // افزودن اعتبارسنج سفارشی MyPasswordValidator برای بررسی قوی بودن رمزهای عبور
+               .AddPasswordValidator<MyPasswordValidator>();
 
             // پیکربندی تنظیمات هویت (Identity) در برنامه
             //services.Configure<IdentityOptions>(option =>
