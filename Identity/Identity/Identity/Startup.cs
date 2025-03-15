@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Identity.Data;
+using Identity.Helpers;
 using Identity.Models.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,7 +33,8 @@ namespace Identity
 
             services.AddIdentity<User, Role>()
                 .AddEntityFrameworkStores<DataBaseContext>()
-                .AddDefaultTokenProviders();
+                .AddDefaultTokenProviders()
+                .AddErrorDescriber<CustomIdentityError>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
