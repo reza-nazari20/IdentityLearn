@@ -100,6 +100,10 @@ namespace Identity
                 // تمدید خودکار مدت زمان کوکی در صورت فعالیت کاربر
                 option.SlidingExpiration = true;
             });
+
+            // ثبت سرویس سفارشی AddMyClaims به عنوان پیاده‌سازی IUserClaimsPrincipalFactory<User> در سیستم تزریق وابستگی
+            // با طول عمر Scoped (به ازای هر درخواست یک نمونه جدید)
+            services.AddScoped<IUserClaimsPrincipalFactory<User>, AddMyClaims>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
