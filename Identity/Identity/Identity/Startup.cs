@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Identity.Data;
 using Identity.Helpers;
 using Identity.Models.Entities;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -37,7 +38,9 @@ namespace Identity
                .AddEntityFrameworkStores<DataBaseContext>()
                // افزودن ارائه‌دهنده‌های توکن پیش‌فرض برای عملیاتی مانند بازیابی رمز عبور و تأیید ایمیل
                .AddDefaultTokenProviders()
-               // استفاده از کلاس سفارشی CustomIdentityError برای نمایش پیام‌های خطا (احتمالاً به زبان فارسی)
+               // فعال‌سازی سیستم نقش‌ها (Roles) با استفاده از کلاس Role تعریف شده در برنامه
+               .AddRoles<Role>()
+               // استفاده از کلاس سفارشی CustomIdentityError برای نمایش پیام‌های خطا به زبان فارسی
                .AddErrorDescriber<CustomIdentityError>()
                // افزودن اعتبارسنج سفارشی MyPasswordValidator برای بررسی قوی بودن رمزهای عبور
                .AddPasswordValidator<MyPasswordValidator>();
@@ -103,7 +106,11 @@ namespace Identity
 
             // ثبت سرویس سفارشی AddMyClaims به عنوان پیاده‌سازی IUserClaimsPrincipalFactory<User> در سیستم تزریق وابستگی
             // با طول عمر Scoped (به ازای هر درخواست یک نمونه جدید)
-            services.AddScoped<IUserClaimsPrincipalFactory<User>, AddMyClaims>();
+            //services.AddScoped<IUserClaimsPrincipalFactory<User>, AddMyClaims>();
+
+            // ثبت سرویس IClaimsTransformation با پیاده‌سازی AddClaim در محدوده Scoped
+            // این سرویس برای اضافه کردن کلیم‌های سفارشی به هویت کاربر در هر درخواست استفاده می‌شود
+            services.AddScoped<IClaimsTransformation, AddClaim>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

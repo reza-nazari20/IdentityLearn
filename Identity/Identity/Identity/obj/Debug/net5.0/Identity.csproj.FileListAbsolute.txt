@@ -483,3 +483,5 @@ E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Account\TwoFactorLogin.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\UserClaim\Index.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\UserClaim\Create.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Authorize\Index.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Authorize\Edit.cshtml.g.cs

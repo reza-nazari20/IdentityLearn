@@ -1,4 +1,5 @@
 ﻿using Identity.Models.Entities;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
@@ -26,6 +27,29 @@ namespace Identity.Helpers
 
             // بازگرداندن هویت غنی شده با کلیم‌های اضافی
             return identity;
+        }
+    }
+
+    // کلاس سفارشی برای تغییر و تحول کلیم‌های کاربر با پیاده‌سازی اینترفیس IClaimsTransformation
+    public class AddClaim : IClaimsTransformation
+    {
+        // متد اجباری از اینترفیس IClaimsTransformation برای تغییر کلیم‌های کاربر در زمان اجرا
+        public Task<ClaimsPrincipal> TransformAsync(ClaimsPrincipal principal)
+        {
+            // بررسی اینکه آیا شیء principal خالی نیست
+            if (principal != null)
+            {
+                // تبدیل هویت اصلی کاربر به ClaimsIdentity برای دسترسی به کلیم‌ها
+                var identity = principal.Identity as ClaimsIdentity;
+                // بررسی اینکه آیا تبدیل با موفقیت انجام شده است
+                if (identity != null)
+                {
+                    // افزودن یک کلیم جدید با نام "TestClaim" و مقدار "YES" به هویت کاربر
+                    identity.AddClaim(new Claim("TestClaim", "YES", ClaimValueTypes.String));
+                }
+            }
+            // بازگرداندن شیء principal تغییریافته به صورت یک Task
+            return Task.FromResult(principal);
         }
     }
 }
