@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\helpers\\addmyclaims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\helpers\\addmyclaims.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\controllers\\authorizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\controllers\\authorizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +18,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 12,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddMyClaims.cs",
-              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Helpers\\AddMyClaims.cs",
-              "RelativeDocumentMoniker": "Identity\\Helpers\\AddMyClaims.cs",
-              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Helpers\\AddMyClaims.cs",
-              "RelativeToolTip": "Identity\\Helpers\\AddMyClaims.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAUwDUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T06:45:12.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Startup.cs",
-              "RelativeDocumentMoniker": "Identity\\Startup.cs",
-              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Startup.cs",
-              "RelativeToolTip": "Identity\\Startup.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAgwHAAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T06:42:00.906Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -96,15 +66,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthorizeController.cs",
-              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Controllers\\AuthorizeController.cs",
-              "RelativeDocumentMoniker": "Identity\\Controllers\\AuthorizeController.cs",
-              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Controllers\\AuthorizeController.cs",
-              "RelativeToolTip": "Identity\\Controllers\\AuthorizeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Identity\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Identity\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAkwC4AAACgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T06:37:51.457Z",
+              "WhenOpened": "2025-03-19T08:23:22.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Startup.cs",
+              "RelativeDocumentMoniker": "Identity\\Startup.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Startup.cs",
+              "RelativeToolTip": "Identity\\Startup.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwEEAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T08:09:31.816Z",
               "EditorCaption": ""
             }
           ]

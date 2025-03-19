@@ -45,6 +45,29 @@ namespace Identity
                // افزودن اعتبارسنج سفارشی MyPasswordValidator برای بررسی قوی بودن رمزهای عبور
                .AddPasswordValidator<MyPasswordValidator>();
 
+            // تنظیم سیستم مجوزدهی برنامه با تعریف قوانین دسترسی سفارشی
+            services.AddAuthorization(option =>
+            {
+                // تعریف قانون دسترسی "Buy"
+                // این قانون فقط به کاربرانی اجازه دسترسی می‌دهد که در اطلاعات هویتی (کلیم)آنها کلید "Buyer" وجود داشته باشد
+                // مهم نیست مقدار این کلید چیست، فقط وجود آن کافی است
+                option.AddPolicy("Buy", policy =>
+                {
+                    //فقط برای کاربرانی قابل دسترسی است که کلیم "Buyer" را داشته باشند
+                    policy.RequireClaim("Buyer");
+                });
+
+                // تعریف قانون دسترسی "BloodType"
+                // این قانون فقط به کاربرانی اجازه دسترسی می‌دهد که در اطلاعات هویتی (کلیم) آنها
+                // کلید "Blood" با یکی از مقادیر "A+" یا "O+" وجود داشته باشد
+                // کاربران با گروه خونی دیگر اجازه دسترسی نخواهند داشت
+                option.AddPolicy("BloodType", policy =>
+                {
+                    //فقط برای کاربرانی قابل دسترسی است که کلیم Blood داشته باشند و گروه خونی آنها A+یا O+ باشد
+                    policy.RequireClaim("Blood", "A+", "O+");
+                });
+            });
+
             // پیکربندی تنظیمات هویت (Identity) در برنامه
             //services.Configure<IdentityOptions>(option =>
             //{
