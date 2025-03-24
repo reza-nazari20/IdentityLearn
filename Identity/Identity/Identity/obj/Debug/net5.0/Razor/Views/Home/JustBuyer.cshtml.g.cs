@@ -22,10 +22,10 @@ using Identity
 #line 2 "E:\IdentityLearn\Identity\Identity\Identity\Views\_ViewImports.cshtml"
 using Identity.Models
 
-#line default
-#line hidden
 #nullable disable
     ;
+    #line default
+    #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"1b9dc2fd385a182f381d51d4c031a52bb9bd69bd60a5ec5e4ee51a0e040d61a0", @"/Views/Home/JustBuyer.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2ba6587cf63c5eb056e344d0103549d3728d9279ca1829fae768457fb87f1e4a", @"/Views/_ViewImports.cshtml")]
     #nullable restore

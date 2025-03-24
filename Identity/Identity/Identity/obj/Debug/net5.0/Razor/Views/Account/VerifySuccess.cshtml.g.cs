@@ -22,10 +22,10 @@ using Identity
 #line 2 "E:\IdentityLearn\Identity\Identity\Identity\Views\_ViewImports.cshtml"
 using Identity.Models
 
-#line default
-#line hidden
 #nullable disable
     ;
+    #line default
+    #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"a4067ecbd8f5b7e0ab474f7fd9e1cd53cb41c3fb041ad7ad243dc2ddc9b7b991", @"/Views/Account/VerifySuccess.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2ba6587cf63c5eb056e344d0103549d3728d9279ca1829fae768457fb87f1e4a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
@@ -69,7 +69,7 @@ using Identity.Models
 #nullable disable
 
             WriteLiteral("\r\n<h1 class=\"alert alert-success\">تایید شماره تلفن</h1>\r\n\r\n<div class=\"alert alert-info\">\r\n    <p>شماره تلفن شما با موفقیت تایید شد</p>\r\n    <br />\r\n    <strong>تشکر از شما</strong>\r\n</div>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4067ecbd8f5b7e0ab474f7fd9e1cd53cb41c3fb041ad7ad243dc2ddc9b7b9914159", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4067ecbd8f5b7e0ab474f7fd9e1cd53cb41c3fb041ad7ad243dc2ddc9b7b9914167", async() => {
                 WriteLiteral("صفحه اصلی");
             }
             );

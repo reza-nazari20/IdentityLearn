@@ -46,6 +46,9 @@ namespace Identity.Helpers
                 {
                     // افزودن یک کلیم جدید با نام "TestClaim" و مقدار "YES" به هویت کاربر
                     identity.AddClaim(new Claim("TestClaim", "YES", ClaimValueTypes.String));
+
+                    // افزودن یک کلیم جدید با نام "Cradit" و مقدار "10000" به هویت کاربر
+                    identity.AddClaim(new Claim("Cradit","10000",ClaimValueTypes.String)); 
                 }
             }
             // بازگرداندن شیء principal تغییریافته به صورت یک Task

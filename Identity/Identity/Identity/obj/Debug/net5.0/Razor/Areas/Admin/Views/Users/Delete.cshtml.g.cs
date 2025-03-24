@@ -22,10 +22,10 @@ using Identity
 #line 2 "E:\IdentityLearn\Identity\Identity\Identity\Areas\Admin\Views\_ViewImports.cshtml"
 using Identity.Models
 
-#line default
-#line hidden
 #nullable disable
     ;
+    #line default
+    #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"c935df19630c99877bd97135470f96e4f034d8dd8751b9864138192bd6843a85", @"/Areas/Admin/Views/Users/Delete.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2ba6587cf63c5eb056e344d0103549d3728d9279ca1829fae768457fb87f1e4a", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
@@ -160,9 +160,9 @@ using Identity.Models
 #nullable disable
             );
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n    \r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c935df19630c99877bd97135470f96e4f034d8dd8751b9864138192bd6843a857743", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c935df19630c99877bd97135470f96e4f034d8dd8751b9864138192bd6843a857751", async() => {
                 WriteLiteral("\r\n        <input type=\"submit\" value=\"Delete\" class=\"btn btn-danger\" /> |\r\n        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c935df19630c99877bd97135470f96e4f034d8dd8751b9864138192bd6843a858114", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c935df19630c99877bd97135470f96e4f034d8dd8751b9864138192bd6843a858122", async() => {
                     WriteLiteral("Back to List");
                 }
                 );

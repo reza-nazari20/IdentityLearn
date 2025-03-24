@@ -22,10 +22,10 @@ using Identity
 #line 2 "E:\IdentityLearn\Identity\Identity\Identity\Views\_ViewImports.cshtml"
 using Identity.Models
 
-#line default
-#line hidden
 #nullable disable
     ;
+    #line default
+    #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"31e3661f7c5ddffa941321ffa410ecc9f6240b5e54046d255e9ddd80e5a366f3", @"/Views/UserClaim/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2ba6587cf63c5eb056e344d0103549d3728d9279ca1829fae768457fb87f1e4a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
@@ -79,7 +79,7 @@ using Identity.Models
 #nullable disable
 
             WriteLiteral("\r\n<h1>User Claims</h1>\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e3661f7c5ddffa941321ffa410ecc9f6240b5e54046d255e9ddd80e5a366f34718", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e3661f7c5ddffa941321ffa410ecc9f6240b5e54046d255e9ddd80e5a366f34726", async() => {
                 WriteLiteral("Add New Claim");
             }
             );
@@ -145,7 +145,7 @@ using Identity.Models
 #nullable disable
             );
             WriteLiteral("</td>\r\n            <td>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e3661f7c5ddffa941321ffa410ecc9f6240b5e54046d255e9ddd80e5a366f37501", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31e3661f7c5ddffa941321ffa410ecc9f6240b5e54046d255e9ddd80e5a366f37509", async() => {
                 WriteLiteral("Delete");
             }
             );

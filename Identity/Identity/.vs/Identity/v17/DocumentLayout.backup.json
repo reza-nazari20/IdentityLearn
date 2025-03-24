@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\IdentityLearn\\Identity\\Identity\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,32 +54,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Identity\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Identity\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAkwC4AAACgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T08:23:22.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Startup.cs",
-              "RelativeDocumentMoniker": "Identity\\Startup.cs",
-              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Startup.cs",
-              "RelativeToolTip": "Identity\\Startup.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAcwEEAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T08:09:31.816Z",
-              "EditorCaption": ""
             }
           ]
         }

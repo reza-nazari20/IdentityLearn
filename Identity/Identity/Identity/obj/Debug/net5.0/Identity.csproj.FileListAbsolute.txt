@@ -489,3 +489,4 @@ E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Authori
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Home\JustBuyer.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Home\AccessDenied.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Home\BloodHuman.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Home\Credit.cshtml.g.cs

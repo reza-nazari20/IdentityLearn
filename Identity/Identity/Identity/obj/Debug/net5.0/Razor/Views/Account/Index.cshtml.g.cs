@@ -22,10 +22,10 @@ using Identity
 #line 2 "E:\IdentityLearn\Identity\Identity\Identity\Views\_ViewImports.cshtml"
 using Identity.Models
 
-#line default
-#line hidden
 #nullable disable
     ;
+    #line default
+    #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc", @"/Views/Account/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"Sha256", @"2ba6587cf63c5eb056e344d0103549d3728d9279ca1829fae768457fb87f1e4a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
@@ -210,7 +210,7 @@ using Identity.Models
 #nullable disable
 
             WriteLiteral("                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc9474", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc9482", async() => {
                 WriteLiteral("تایید ایمیل");
             }
             );
@@ -265,7 +265,7 @@ using Identity.Models
 #nullable disable
 
             WriteLiteral("                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc11843", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc11851", async() => {
                 WriteLiteral("تایید شماره تلفن");
             }
             );
@@ -340,7 +340,7 @@ using Identity.Models
 #nullable disable
 
             WriteLiteral("            <br />\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc14795", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc14803", async() => {
                 WriteLiteral("برای تغییر کلیک کنید");
             }
             );
@@ -366,7 +366,7 @@ using Identity.Models
 #nullable disable
             );
             WriteLiteral(" |\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc16346", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dd1052fcfc9a03b5da36ae397e0d93493bd7cc817eb8e4c7d7bb8108afa0bc16354", async() => {
                 WriteLiteral("Back to List");
             }
             );

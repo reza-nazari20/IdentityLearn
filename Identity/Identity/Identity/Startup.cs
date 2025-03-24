@@ -6,6 +6,7 @@ using Identity.Data;
 using Identity.Helpers;
 using Identity.Models.Entities;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -65,6 +66,16 @@ namespace Identity
                 {
                     //فقط برای کاربرانی قابل دسترسی است که کلیم Blood داشته باشند و گروه خونی آنها A+یا O+ باشد
                     policy.RequireClaim("Blood", "A+", "O+");
+                });
+
+                // تعریف قانون دسترسی "Cradit"
+                // این قانون فقط به کاربرانی اجازه دسترسی می‌دهد که در اطلاعات هویتی (کلیم) آنها
+                // کلید "Cradit" وجود داشته باشد و مقدار آن حداقل 10000 باشد
+                // کاربرانی که اعتبار کافی ندارند اجازه دسترسی نخواهند داشت
+                option.AddPolicy("Cradit", policy =>
+                {
+                    //فقط برای کاربرانی قابل دسترسی است که کلیم Cradit داشته باشند و مقدار آن حداقل 10000 باشد
+                    policy.Requirements.Add(new UserCreditRequerment(10000));
                 });
             });
 
@@ -134,6 +145,10 @@ namespace Identity
             // ثبت سرویس IClaimsTransformation با پیاده‌سازی AddClaim در محدوده Scoped
             // این سرویس برای اضافه کردن کلیم‌های سفارشی به هویت کاربر در هر درخواست استفاده می‌شود
             services.AddScoped<IClaimsTransformation, AddClaim>();
+
+            // ثبت سرویس IAuthorizationHandler با پیاده‌سازی UserCreditHandler در محدوده Scoped
+            // این سرویس برای بررسی اعتبار کاربران بر اساس کلیم Credit آنها استفاده می‌شود
+            services.AddScoped<IAuthorizationHandler, UserCreditHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
