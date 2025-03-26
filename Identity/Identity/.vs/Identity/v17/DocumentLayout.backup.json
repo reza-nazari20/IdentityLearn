@@ -1,7 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\IdentityLearn\\Identity\\Identity\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\migrations\\20250326084901_add-table-blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\migrations\\20250326084901_add-table-blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\models\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\models\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\helpers\\blogrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\helpers\\blogrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\models\\dto\\blog\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\models\\dto\\blog\\blogdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\views\\blog\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\views\\blog\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|e:\\identitylearn\\identity\\identity\\identity\\views\\blog\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2E77DCC4-E0B5-422F-94DC-E631ECD5D0C5}|Identity\\Identity.csproj|solutionrelative:identity\\views\\blog\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +54,151 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250326084901_Add-Table-Blog.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Migrations\\20250326084901_Add-Table-Blog.cs",
+              "RelativeDocumentMoniker": "Identity\\Migrations\\20250326084901_Add-Table-Blog.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Migrations\\20250326084901_Add-Table-Blog.cs",
+              "RelativeToolTip": "Identity\\Migrations\\20250326084901_Add-Table-Blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T08:49:01.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Views\\Blog\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Identity\\Views\\Blog\\Edit.cshtml",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Views\\Blog\\Edit.cshtml",
+              "RelativeToolTip": "Identity\\Views\\Blog\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T08:38:00.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "Identity\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "Identity\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T08:36:31.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Views\\Blog\\Create.cshtml",
+              "RelativeDocumentMoniker": "Identity\\Views\\Blog\\Create.cshtml",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Views\\Blog\\Create.cshtml",
+              "RelativeToolTip": "Identity\\Views\\Blog\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T08:33:36.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Startup.cs",
+              "RelativeDocumentMoniker": "Identity\\Startup.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Startup.cs",
+              "RelativeToolTip": "Identity\\Startup.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFUAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T08:24:36.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Entities\\Blog.cs",
+              "RelativeDocumentMoniker": "Identity\\Models\\Entities\\Blog.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Entities\\Blog.cs",
+              "RelativeToolTip": "Identity\\Models\\Entities\\Blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T08:23:59.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlogRequirement.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Helpers\\BlogRequirement.cs",
+              "RelativeDocumentMoniker": "Identity\\Helpers\\BlogRequirement.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Helpers\\BlogRequirement.cs",
+              "RelativeToolTip": "Identity\\Helpers\\BlogRequirement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T08:22:26.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlogDto.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Dto\\Blog\\BlogDto.cs",
+              "RelativeDocumentMoniker": "Identity\\Models\\Dto\\Blog\\BlogDto.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Dto\\Blog\\BlogDto.cs",
+              "RelativeToolTip": "Identity\\Models\\Dto\\Blog\\BlogDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T08:23:21.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "Identity\\Controllers\\BlogController.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "Identity\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAUwHoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T08:21:09.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataBaseContext.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Data\\DataBaseContext.cs",
+              "RelativeDocumentMoniker": "Identity\\Data\\DataBaseContext.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Data\\DataBaseContext.cs",
+              "RelativeToolTip": "Identity\\Data\\DataBaseContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwBMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T08:21:39.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Identity\\Models\\Entities\\User.cs",
+              "ToolTip": "E:\\IdentityLearn\\Identity\\Identity\\Identity\\Models\\Entities\\User.cs",
+              "RelativeToolTip": "Identity\\Models\\Entities\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T08:27:45.483Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"

@@ -77,6 +77,15 @@ namespace Identity
                     //فقط برای کاربرانی قابل دسترسی است که کلیم Cradit داشته باشند و مقدار آن حداقل 10000 باشد
                     policy.Requirements.Add(new UserCreditRequerment(10000));
                 });
+
+                // تعریف قانون دسترسی "IsBlogForUser"
+                // این قانون فقط به کاربرانی اجازه دسترسی می‌دهد که نویسنده مطلب مورد نظر باشند
+                // برای این کار از کلاس BlogRequirement برای تعریف قانون دسترسی و از کلاس IsBlogForUserAuthorizationHandler برای اعتبارسنجی استفاده شده است
+                option.AddPolicy("IsBlogForUser", policy =>
+                {
+                    // تعریف قانون دسترسی برای اعتبارسنجی نویسنده مطلب
+                    policy.AddRequirements(new BlogRequirement());
+                });
             });
 
             // پیکربندی تنظیمات هویت (Identity) در برنامه
@@ -146,9 +155,13 @@ namespace Identity
             // این سرویس برای اضافه کردن کلیم‌های سفارشی به هویت کاربر در هر درخواست استفاده می‌شود
             services.AddScoped<IClaimsTransformation, AddClaim>();
 
-            // ثبت سرویس IAuthorizationHandler با پیاده‌سازی UserCreditHandler در محدوده Scoped
+            // ثبت سرویس سفارشی MyPasswordValidator به عنوان پیاده‌سازی IPasswordValidator<User> در سیستم تزریق وابستگی
             // این سرویس برای بررسی اعتبار کاربران بر اساس کلیم Credit آنها استفاده می‌شود
-            services.AddScoped<IAuthorizationHandler, UserCreditHandler>();
+            services.AddSingleton<IAuthorizationHandler, UserCreditHandler>();
+
+            // ثبت سرویس سفارشی BlogRequirement به عنوان پیاده‌سازی IAuthorizationRequirement در سیستم تزریق وابستگی
+            // این سرویس برای تعریف یک قانون دسترسی بر اساس مقدار یک کلیم استفاده می‌شود
+            services.AddSingleton<IAuthorizationHandler, IsBlogForUserAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

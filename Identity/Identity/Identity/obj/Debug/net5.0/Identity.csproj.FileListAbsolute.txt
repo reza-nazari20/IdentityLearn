@@ -490,3 +490,6 @@ E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Home\Ju
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Home\AccessDenied.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Home\BloodHuman.cshtml.g.cs
 E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Home\Credit.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Blog\Create.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Blog\Index.cshtml.g.cs
+E:\IdentityLearn\Identity\Identity\Identity\obj\Debug\net5.0\Razor\Views\Blog\Edit.cshtml.g.cs

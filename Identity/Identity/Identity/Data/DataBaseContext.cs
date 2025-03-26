@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata;
 
 namespace Identity.Data
 {
@@ -15,6 +16,9 @@ namespace Identity.Data
         public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options)
         {
         }
+
+        //ساخت تیبل بلاگ
+        public DbSet<Blog> Blogs { get; set; }
 
         // متد بازنویسی شده برای پیکربندی مدل Entity Framework در زمان ساخت مدل
         protected override void OnModelCreating(ModelBuilder modelBuilder)
