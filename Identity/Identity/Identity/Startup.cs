@@ -86,6 +86,14 @@ namespace Identity
                     // تعریف قانون دسترسی برای اعتبارسنجی نویسنده مطلب
                     policy.AddRequirements(new BlogRequirement());
                 });
+
+                // تعریف قانون دسترسی "AdminUsers"
+                // این قانون فقط به کاربرانی اجازه دسترسی میدهد که نقش انها ادمین باشد
+                option.AddPolicy("AdminUsers", policy =>
+                {
+                    // تعریف قانون دسترسی فقط ادمین
+                    policy.RequireRole("Admin");
+                });
             });
 
             // پیکربندی تنظیمات هویت (Identity) در برنامه
